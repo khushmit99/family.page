@@ -1,11 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  background: #26e9e9;
+  background: #3f8ad1;
   color: #000000;
   text-align: center;
   margin: 0;
 }
-
+ h1{
+  text-shadow: #ffffff 2px 2px 4px;
+ }
 .title {
   font-size: 2.5rem;
   margin-top: 20px;
