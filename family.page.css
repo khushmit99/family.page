@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #26e9e9;
+  color: #000000;
+  text-align: center;
+  margin: 0;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+/* Profile */
+.profile {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card p {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+/* Hover */
+.card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+/* Auto-sliding */
+.Auto-sliding {
+  display: flex;
+  width: 600px;
+  height: 400px;
+  margin: 30px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.slides {     
+  display: flex;
+  width: 100%;
+  animation: slide 11s infinite;
+}
+
+.slides img {
+  display: flex;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Animation */
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  35%  { transform: translateX(-100%); }
+  65%  { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
